@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PixelPartnersStudio</title>
+  <style>
+    body {
+      background-color: rgb(20, 144, 226);
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: rgb(0, 255, 21);
+      font-family: Impact, sans-serif;
+      text-align: center;
+      margin: 20px 0;
+      font-size: 36px; /* aumentato */
+    }
+
+    nav {
+      background-color: #333;
+      overflow: auto;
+    }
+
+    nav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 16px 70px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #000000;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+      height: 220px; /* aumentato rispetto a prima */
+      margin-bottom: 40px;
+    }
+
+    .slides {
+      display: flex;
+      width: 500%;
+      animation: slide 20s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 220px; /* coerente con lo slider */
+      object-fit: contain; /* immagini non stirate */
+      background-color: black; /* per riempire lo spazio se serve */
+    }
+
+    @keyframes slide {
+      0% {margin-left: 0%;}
+      20% {margin-left: 0%;}
+      25% {margin-left: -100%;}
+      45% {margin-left: -100%;}
+      50% {margin-left: -200%;}
+      70% {margin-left: -200%;}
+      75% {margin-left: -300%;}
+      95% {margin-left: -300%;}
+      100% {margin-left: -400%;}
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2, p {
+      color: white;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid white;
+    }
+
+    .form-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 8px;
+      color: white;
+    }
+
+    .paypal-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>PixelPartnersStudio</h1>
+
+  <!-- Slider -->
+  <div class="slider">
+    <div class="slides">
+      <img src="immagini/sfondo1.jpg" alt="Slide 1">
+      <img src="immagini/sfondo2.jpg" alt="Slide 2">
+      <img src="immagini/logo1.jpg" alt="Slide 3">
+      <img src="immagini/VTuber1.jpg" alt="Slide 4">
+      <img src="immagini/logo9.jpg" alt="Slide 5">
+    </div>
+  </div>
+
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#chi-siamo">Chi siamo</a>
+    <a href="#progetti">Progetti</a>
+    <a href="#ordini">Ordini</a>
+    <a href="#contatti">Contatti</a>
+    <a href="english.html">ENGLISH TRADUCTION</a>
+  </nav>
+
+  <div class="content">
+
+    <!-- Chi siamo -->
+    <section id="chi-siamo">
+      <h2>Chi siamo</h2>
+      <p>Benvenuti! Siamo qui per aiutarvi a dare vita al vostro stream con un design curato e personalizzato.
+          Ogni streamer è unico, e siamo orgogliosi di creare contenuti visivi che riflettano la vostra identità, il vostra stile e la vostra passione.
+          Dagli stream pack ai loghi, banner e molto altro, il nostro lavoro è realizzato con attenzione ai dettagli, creatività e rispetto per le vostre idee.
+          Siamo onorati di far parte del vostro percorso. Creiamo insieme qualcosa che vi rappresenti davvero.
+      </p>
+    </section>
+
+    <!-- Progetti -->
+    <section id="progetti">
+      <h2>Progetti</h2>
+
+      <h3>🖌️ Loghi</h3>
+      <div class="gallery">
+        <img src="immagini/logo1.jpg" alt="Logo 1">
+        <img src="immagini/logo2.jpg" alt="Logo 2">
+        <img src="immagini/logo3.jpg" alt="Logo 3">
+        <img src="immagini/logo4.jpg" alt="Logo 4">
+        <img src="immagini/logo5.jpg" alt="Logo 5">
+        <img src="immagini/logo6.jpg" alt="Logo 6">
+        <img src="immagini/logo7.jpg" alt="Logo 7">
+        <img src="immagini/logo8.jpg" alt="Logo 8">
+        <img src="immagini/logo9.jpg" alt="Logo 9">
+        <img src="immagini/logo10.jpg" alt="Logo 10">
+        <img src="immagini/Logosera1.jpg" alt="Logo 11">
+      </div>
+
+      <h3>🎨 Banner</h3>
+      <div class="gallery">
+        <img src="immagini/banner1.jpg" alt="Banner 1">
+        <img src="immagini/banner2.jpg" alt="Banner 2">
+        <img src="immagini/banner3.jpg" alt="Banner 3">
+        <img src="immagini/banner4.jpg" alt="Banner 4">
+        <img src="immagini/banner5.jpg" alt="Banner 5">
+      </div>
+
+      <h3>😊 Emote</h3>
+<div class="gallery">
+  <!-- Emote statiche -->
+  <img src="immagini/emote1.jpg" alt="Emote 1">
+  <img src="immagini/emote2.jpg" alt="Emote 2">
+  <img src="immagini/emotesera1.jpg" alt="Emote 3">
+  <img src="immagini/emotesera2.jpg" alt="Emote 4">
+  
+
+  <!-- Emote animate -->
+  <div style="position: relative; display: inline-block;">
+    <video src="immagini/emoteanimata1-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+
+  <div style="position: relative; display: inline-block;">
+    <video src="immagini/emoteanimata2-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+</div>
+
+<div style="position: relative; display: inline-block;">
+    <video src="immagini/emoteanimata3-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+</div>
+
+<div style="position: relative; display: inline-block;">
+    <video src="immagini/emoteanimata4-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+</div>
+
+<div style="position: relative; display: inline-block;">
+    <video src="immagini/emoteanimata5-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+</div>
+
+      <h3>🎭 VTuber</h3>
+      <div class="gallery">
+        <img src="immagini/VTuber1.jpg" alt="VTuber 1">
+        <img src="immagini/VTUBER2.jpg" alt="VTuber 2">
+      </div>
+
+      <h3>🧩 Grafiche personalizzate</h3>
+      <div class="gallery">
+        <img src="immagini/sfondo1.jpg" alt="Grafica 1">
+        <img src="immagini/sfondo2.jpg" alt="Grafica 2">
+        <img src="immagini/graficasera1.jpg" alt="Grafica 3">
+        <img src="immagini/graficasera2.jpg" alt="Grafica 4">
+        <img src="immagini/graficasera3.jpg" alt="Grafica 5">
+        <img src="immagini/graficasera4.jpg" alt="Grafica 6">
+        <img src="immagini/packsera1.jpg" alt="Grafica 7">
+
+      </div>
+    </section>
+    
+<div style="position: relative; display: inline-block;">
+    <video src="immagini/packvideo.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
+    <div style="
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    ">Animata 🎞️</div>
+  </div>
+</div>
+
+    <!-- Ordini -->
+    <section id="ordini">
+  <h2>I tuoi ordini</h2>
+  <div class="form-box">
+    <p>Compila il modulo qui sotto per inviarci i dettagli del tuo ordine. Ti risponderemo su Instagram o via email.</p>
+
+    <!-- Link cliccabile -->
+    <p style="color: white;">
+      👉 Oppure <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-OF4BfRRmEsW3msGXPyo7Fe5y2hdnMuuXSIrIMeQvoN17TQ/viewform?usp=header" 
+      target="_blank" 
+      style="color: #00ffcc; text-decoration: underline;">
+      clicca qui per aprire il modulo d’ordine in una nuova scheda</a>.
+    </p>
+
+    <!-- Modulo Google Forms -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-OF4BfRRmEsW3msGXPyo7Fe5y2hdnMuuXSIrIMeQvoN17TQ/viewform?usp=header" 
+      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
+      Caricamento…
+    </iframe>
+  </div>
+
+      <!-- PayPal -->
+      <div class="paypal-button">
+        <p style="color: white;">💳 Dopo aver confermato con noi il prezzo, puoi pagare tramite PayPal:</p>
+        <form action="https://paypal.me/DavideGuerreschi?country.x=IT&locale.x=it_IT" method="post" target="_blank">
+          <input type="hidden" name="hosted_button_id" value="IL_TUO_ID_PAYPAL">
+          <input type="image" src="https://www.paypalobjects.com/it_IT/IT/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Paga con PayPal" alt="Pulsante PayPal" />
+        </form>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti">
+      <h2>Contatti</h2>
+      <p>📩 Email: <a href="mailto:pixelpartnersstudio@example.com">pixelpartnersstudio@example.com</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/Devidguerr" target="_blank">@Devidguerr</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/emilyjackm" target="_blank">@Emily_jack</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 PixelPartnersStudio - Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
