@@ -315,10 +315,27 @@
       </div>
     </section>
 
+   <div class="paypal-button" style="text-align:center; margin-top:20px;">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="davide.guerreschi08@gmail.com"> <!-- METTI LA TUA EMAIL PAYPAL -->
+    <input type="hidden" name="item_name" value="Ordine personalizzato PixelPartnersStudio">
+    
+    <label for="amount" style="color:white; font-weight:bold;">Enter the amount to pay here (€):</label><br>
+    <input type="number" name="amount" id="amount" step="0.01" min="0.01" required 
+           style="padding:5px; margin-top:5px; margin-bottom:10px; width:150px; font-size:16px; border-radius:5px; border:none;">
+    
+    <br>
+    <input type="submit" value="Paga con Carta o PayPal" 
+           style="padding:10px 25px; font-size:16px; cursor:pointer; background-color:#0c455e; color:white; border:none; border-radius:5px;">
+      </form>
+    </div>
+
     <!-- Contacts -->
     <section id="contacts">
       <h2>Contacts</h2>
       <p>📩 Email: <a href="mailto:davide.guerreschi08@gmail.com">davide.guerreschi08@gmail.com</a></p>
+      <p>📩 Email: <a href="mailto:emilyjack9079@gmail.com">emilyjack9079@gmail.com</a></p>
       <p>📸 Instagram: <a href="https://instagram.com/Devidguerr" target="_blank">@Devidguerr</a></p>
       <p>📸 Instagram: <a href="https://instagram.com/emilyjackm" target="_blank">@Emily_jack</a></p>
     </section>
