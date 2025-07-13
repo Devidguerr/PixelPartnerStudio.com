@@ -332,6 +332,22 @@
       </div>
     </section>
 
+    <div class="paypal-button" style="text-align:center; margin-top:20px;">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+    <input type="hidden" name="cmd" value="_xclick">
+    <input type="hidden" name="business" value="davide.guerreschi08@gmail.com"> <!-- METTI LA TUA EMAIL PAYPAL -->
+    <input type="hidden" name="item_name" value="Ordine personalizzato PixelPartnersStudio">
+    
+    <label for="amount" style="color:white; font-weight:bold;">Inserisci l'importo da pagare (€):</label><br>
+    <input type="number" name="amount" id="amount" step="0.01" min="0.01" required 
+           style="padding:5px; margin-top:5px; margin-bottom:10px; width:150px; font-size:16px; border-radius:5px; border:none;">
+    
+    <br>
+    <input type="submit" value="Paga con Carta o PayPal" 
+           style="padding:10px 25px; font-size:16px; cursor:pointer; background-color:#0c455e; color:white; border:none; border-radius:5px;">
+      </form>
+    </div>
+
     <!-- Contatti -->
     <section id="contatti">
       <h2>Contatti</h2>
