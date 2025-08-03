@@ -2,222 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PixelPartnersStudio</title>
   <link rel="stylesheet" href="stile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #111;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2, h3 {
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffcc;
+    }
+    nav a {
+      color: #00ffcc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .gallery-grid .item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      border: 2px solid #444;
+    }
+    .gallery-grid img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+    .hover-info {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .item:hover .hover-info {
+      opacity: 1;
+    }
+    .hover-info button {
+      background: #00ffcc;
+      border: none;
+      padding: 5px 10px;
+      color: black;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .testimonials {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin: 30px 0;
+      border-left: 4px solid #00ffcc;
+    }
+
+    .contact-form {
+      background-color: #1a1a1a;
+      padding: 20px;
+      margin: 40px 0;
+      border-radius: 8px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      background-color: #00ffcc;
+      border: none;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    iframe.twitch {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #888;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00ffcc;
+      color: #000;
+      padding: 10px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
+
   <h1>PixelPartnersStudio</h1>
 
-  <!-- Slider -->
-  <div class="slider">
-    <div class="slides">
-      <img src="immagini/sfondo1.jpg" alt="Slide 1">
-      <img src="immagini/sfondo2.jpg" alt="Slide 2">
-      <img src="immagini/logo1.jpg" alt="Slide 3">
-      <img src="immagini/VTuber1.jpg" alt="Slide 4">
-      <img src="immagini/logo9.jpg" alt="Slide 5">
-    </div>
-  </div>
-
-  <!-- Navbar -->
-  <nav>
-    <a href="#about">About us</a>
-    <a href="#projects">Projects</a>
-    <a href="#orders">Orders</a>
-    <a href="#contacts">Contacts</a>
-    <a href="index.html">ITALIAN TRADUCTION</a>
-  </nav>
-
-  <div class="content">
-
-    <!-- About -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Welcome  we're here to help bring your stream to life with thoughtful, personalized design.
-          Every streamer is unique, and we take pride in creating visuals that reflect your identity, style, and passion.
-          From stream packs to logos, banners, and more our work is carefully crafted with attention to detail, creativity, and respect for your vision.
-          We’re honored to be part of your journey. Let’s create something that truly feels like yours.
-      </p>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <h3>🖌️ Logos</h3>
-      <div class="gallery">
-        <img src="immagini/logo1.jpg" alt="Logo 1">
-        <img src="immagini/logo2.jpg" alt="Logo 2">
-        <img src="immagini/logo3.jpg" alt="Logo 3">
-        <img src="immagini/logo4.jpg" alt="Logo 4">
-        <img src="immagini/logo5.jpg" alt="Logo 5">
-        <img src="immagini/logo6.jpg" alt="Logo 6">
-        <img src="immagini/logo7.jpg" alt="Logo 7">
-        <img src="immagini/logo8.jpg" alt="Logo 8">
-        <img src="immagini/logo9.jpg" alt="Logo 9">
-        <img src="immagini/logo10.jpg" alt="Logo 10">
-        <img src="immagini/Logosera1.jpg" alt="Logo 11">
-      </div>
-      
-
-      <h3>🎨 Banners</h3>
-      <div class="gallery">
-        <img src="immagini/banner1.jpg" alt="Banner 1">
-        <img src="immagini/banner2.jpg" alt="Banner 2">
-        <img src="immagini/banner3.jpg" alt="Banner 3">
-        <img src="immagini/banner4.jpg" alt="Banner 4">
-        <img src="immagini/banner5.jpg" alt="Banner 5">
-      </div>
-
-      <h3>😊 Emotes</h3>
-      <div class="gallery">
-       <img src="immagini/emote1.jpg" alt="Emote 1">
-        <img src="immagini/emote2.jpg" alt="Emote 2">
-        <img src="immagini/emotesera1.jpg" alt="Emote 3">
-        <img src="immagini/emotesera2.jpg" alt="Emote 4">
-
-        <div style="position: relative; display: inline-block;">
-          <video src="immagini/emoteanimata1-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-          <div style="position: absolute; top: 8px; left: 8px; background-color: rgba(0, 0, 0, 0.6); color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">Animated 🎞️</div>
+  <!-- MODERN GALLERY SECTION -->
+  <section id="portfolio">
+    <h2>🎨 Portfolio</h2>
+    <div class="gallery-grid">
+      <div class="item">
+        <img src="immagini/logo1.jpg" alt="Logo">
+        <div class="hover-info">
+          Custom Logo<br>
+          <button>View Full</button>
         </div>
-
-        <div style="position: relative; display: inline-block;">
-    <video src="immagini/emoteanimata2-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-    <div style="
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    ">Animata 🎞️</div>
-  </div>
-</div>
-
-<div style="position: relative; display: inline-block;">
-    <video src="immagini/emoteanimata3-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-    <div style="
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    ">Animata 🎞️</div>
-  </div>
-</div>
-
-<div style="position: relative; display: inline-block;">
-    <video src="immagini/emoteanimata4-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-    <div style="
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    ">Animata 🎞️</div>
-  </div>
-</div>
-
-<div style="position: relative; display: inline-block;">
-    <video src="immagini/emoteanimata5-1.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-    <div style="
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    ">Animata 🎞️</div>
-  </div>
- 
       </div>
-
-      <h3>🎭 VTuber</h3>
-      <div class="gallery">
-        <img src="immagini/VTuber1.jpg" alt="VTuber 1">
-        <img src="immagini/VTUBER2.jpg" alt="VTuber 2">
+      <div class="item">
+        <img src="immagini/banner2.jpg" alt="Banner">
+        <div class="hover-info">
+          Streaming Banner<br>
+          <button>View Full</button>
+        </div>
       </div>
-
-      <h3>🧩 Custom Graphics</h3>
-      <div class="gallery">
-        <img src="immagini/sfondo1.jpg" alt="Grafic 1">
-        <img src="immagini/sfondo2.jpg" alt="Grafic 2">
-        <img src="immagini/graficasera1.jpg" alt="Grafic 3">
-        <img src="immagini/graficasera2.jpg" alt="Grafic 4">
-        <img src="immagini/graficasera3.jpg" alt="Grafic 5">
-        <img src="immagini/graficasera4.jpg" alt="Grafic 6">
-        <img src="immagini/packsera1.jpg" alt="Grafic 7">
+      <div class="item">
+        <img src="immagini/emote2.jpg" alt="Emote">
+        <div class="hover-info">
+          Twitch Emote<br>
+          <button>View Full</button>
+        </div>
       </div>
-    </section>
-    <div style="position: relative; display: inline-block;">
-    <video src="immagini/packvideo.mp4" autoplay loop muted playsinline width="200" style="border-radius: 8px; border: 2px solid white;"></video>
-    <div style="
-      position: absolute;
-      top: 8px;
-      left: 8px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 4px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      font-weight: bold;
-    ">Animata 🎞️</div>
-  </div>
-</div>
-
-    <!-- Orders -->
-    <section id="orders">
-      <h2>Your Orders</h2>
-      <div class="form-box">
-        <p>Fill out the form below to send us the details of your order. We will respond via Instagram or email.</p>
-
-        <p style="color: white;">
-          👉 Or <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-OF4BfRRmEsW3msGXPyo7Fe5y2hdnMuuXSIrIMeQvoN17TQ/viewform?usp=header" 
-          target="_blank" 
-          style="color: #00ffcc; text-decoration: underline;">
-          click here to open the order form in a new tab</a>.
-        </p>
-
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-OF4BfRRmEsW3msGXPyo7Fe5y2hdnMuuXSIrIMeQvoN17TQ/viewform?usp=header" 
-          width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">
-          Loading…
-        </iframe>
+      <div class="item">
+        <img src="immagini/VTuber1.jpg" alt="VTuber">
+        <div class="hover-info">
+          VTuber Model<br>
+          <button>View Full</button>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="paypal-button">
-        <p style="color: white;">💳 After confirming the price with us, you can pay via PayPal:</p>
-        <form action="https://paypal.me/DavideGuerreschi?country.x=IT&locale.x=it_IT" method="post" target="_blank">
-          <input type="hidden" name="hosted_button_id" value="IL_TUO_ID_PAYPAL">
-          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="Pay with PayPal" alt="PayPal Button" />
-        </form>
-      </div>
-    </section>
+  <!-- TESTIMONIALS SECTION -->
+  <section class="testimonials">
+    <h2>💬 What Streamers Say</h2>
+    <p>"Clean and awesome overlays! My stream was reborn." — @StreamerXYZ</p>
+    <p>"Super fast service and flawless graphics!" — @TwitchGirl92</p>
+  </section>
 
-    <!-- Contacts -->
-    <section id="contacts">
-      <h2>Contacts</h2>
-      <p>📩 Email: <a href="mailto:pixelpartnersstudio@example.com">pixelpartnersstudio@example.com</a></p>
-      <p>📸 Instagram: <a href="https://instagram.com/Devidguerr" target="_blank">@Devidguerr</a></p>
-      <p>📸 Instagram: <a href="https://instagram.com/emilyjackm" target="_blank">@Emily_jack</a></p>
-    </section>
-  </div>
+  <!-- TWITCH STREAM EMBED -->
+  <section id="live">
+    <h2>📺 Watch Live</h2>
+    <iframe class="twitch" src="https://player.twitch.tv/?channel=devidguerr&parent=yourdomain.com" allowfullscreen></iframe>
+    <p style="text-align:center;"><a href="https://twitch.tv/devidguerr" target="_blank" style="color: #00ffcc;">👉 Follow on Twitch</a></p>
+  </section>
 
+  <!-- CONTACT FORM -->
+  <section id="contact">
+    <h2>📬 Contact Us</h2>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your message or request" required></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 PixelPartnersStudio - All rights reserved</p>
+    <div class="social-links">
+      <a href="https://instagram.com/Devidguerr" target="_blank">Instagram</a> |
+      <a href="https://twitch.tv/devidguerr" target="_blank">Twitch</a> |
+      <a href="mailto:pixelpartnersstudio@example.com">Email</a>
+    </div>
   </footer>
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" onclick="scrollToTop()">↑</button>
+
+  <script>
+    window.onscroll = function () {
+      const scrollBtn = document.getElementById("scrollTop");
+      scrollBtn.style.display = window.scrollY > 100 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>
